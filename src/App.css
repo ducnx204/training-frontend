@@ -1,0 +1,156 @@
+body {
+  margin: 0; /* Bỏ margin mặc định của body */
+}
+
+.topsection1 {
+  background-color: rgb(0, 125, 184); /* Màu nền cho thẻ div đầu tiên */
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  height: 100%; /* Đảm bảo chiều cao của row bằng với topsection1 */
+  width: 75%; /* Chiều rộng của row */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.right img {
+  width: 34px;
+  padding-top: 5px;
+}
+
+.hotline-label, .hotline-number {
+  color: white; /* Màu chữ trắng */
+  font-size: 16px; /* Kích thước font chữ tùy chỉnh */
+  margin-right: 5px; /* Khoảng cách giữa hai thẻ span */
+}
+
+/* Đặt style cho .topsection2 */
+.topsection2 {
+  padding: 20px 190px; /* Khoảng cách trong phần trên cùng */
+}
+
+/* Đặt style cho .header2 */
+.header2 {
+  display: flex; /* Sử dụng flexbox để sắp xếp các phần tử ngang hàng */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các phần tử */
+}
+
+/* Đặt style cho hình ảnh logo */
+.header2 img {
+  width: 100px; /* Điều chỉnh kích thước hình ảnh */
+  height: auto; /* Giữ tỉ lệ hình ảnh */
+  margin-right: 100px; /* Khoảng cách bên phải của logo */
+}
+
+/* Đặt style cho slogan */
+.header2 .tagline {
+  font-size: 26px;
+  color: #007db8;
+  white-space: nowrap;
+  font-weight: 500;
+  margin: 0 210px; /* Khoảng cách trái và phải của slogan */
+}
+
+/* Đặt style cho phần tìm kiếm */
+.header2 .search {
+  flex-grow: 1; /* Làm cho phần tìm kiếm chiếm không gian còn lại */
+  margin-left: 70px; /* Khoảng cách bên trái của phần tìm kiếm */
+}
+
+.header2 .search input {
+  width: 79%; /* Chiếm toàn bộ không gian của .search */
+  padding: 12px 40px 12px 12px; /* Padding để tạo không gian cho icon */
+  border-left: 1px solid #dfdfdf; /* Chỉ có viền trái */
+  border-right: 1px solid #dfdfdf; /* Chỉ có viền phải */
+  font-size: 15px; /* Kích thước chữ */
+  outline: none; /* Bỏ viền outline khi focus */
+  background-image: url("/src/assets/Images/icon-search.png"); /* Icon nằm ở bên phải */
+  background-size: 18px 18px; /* Kích thước của icon */
+  background-position: 93% center; /* Vị trí của icon */
+  background-repeat: no-repeat; /* Không lặp lại icon */
+  border-top: none; /* Bỏ viền trên */
+  border-bottom: none; /* Bỏ viền dưới */
+  border-radius: 0; /* Bỏ bo góc nếu cần */
+}
+
+/* CSS file: Footer.css */
+.topfooter {
+  padding: 5px 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative; /* Đảm bảo không bị ảnh hưởng bởi các phần tử con */
+}
+
+.topcontainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topcontainer ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative; /* Position relative để quản lý dropdown menu */
+}
+
+.topcontainer ul li {
+  margin: 0 15px;
+  cursor: pointer; /* Thêm con trỏ để chỉ ra rằng có thể click được */
+  position: relative; /* Position relative để đặt dropdown menu bên trong */
+}
+
+.topcontainer ul li a {
+  color: rgb(0, 0, 0); /* Màu chữ đen */
+  text-decoration: none; /* Bỏ gạch chân */
+  padding-bottom: 6px; /* Đảm bảo khoảng cách bên dưới của chữ */
+  display: block; /* Đảm bảo các liên kết chiếm toàn bộ chiều rộng của mục */
+
+}
+
+.topcontainer ul li a:hover,
+.topcontainer ul li a.active {
+  color: #0055ba; /* Đổi màu chữ khi di chuột vào hoặc được chọn */
+  border-bottom: 2px solid #0055ba; /* Thêm gạch chân màu xanh */
+  text-decoration: underline; /* Thêm gạch chân */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+.topcontainer ul li:hover .dropdown-menu {
+  display: block; /* Hiển thị menu con khi di chuột vào mục chính */
+}
+
+.dropdown-menu li {
+  margin: 0; /* Xóa margin mặc định */
+}
+
+.dropdown-menu a {
+  color: black; /* Màu chữ của menu con */
+  text-decoration: none; /* Bỏ gạch chân */
+  display: block; /* Đảm bảo các liên kết trong menu con chiếm toàn bộ chiều rộng của mục */
+  padding: 5px 10px; /* Padding cho liên kết */
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5; /* Màu nền khi di chuột vào liên kết trong menu con */
+}
