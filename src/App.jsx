@@ -67,6 +67,8 @@ function App() {
           </ul>
         </div>
       </div>
+
+      {/* imprt file footer vào đây */}
     </div>
   );
 }
